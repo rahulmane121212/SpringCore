@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p="http://www.springframework.org/schema/p"
+ 
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+    <bean class="Demo.Customer" name="custome">
+    
+    
+     <property name="customerid" value="10101" />
+     
+     
+     <property name="customerName">
+     <value>Rahul</value>
+     </property>
+     
+     <property name="customerContact">
+     <value>7620340352</value>
+     </property>
+     
+     
+     <property name="customerAddress" ref="addres">
+     
+     </property>
+    
+    
+    </bean>
+    
+    <bean class="Demo.Address" name="addres">
+    <property name="street">
+    <value>Morgaon Road</value>
+    </property>
+    
+    <property name="city">
+    <value>Baramati</value>
+    </property>
+    
+    <property name="state">
+    <value>Maharashtra</value>
+     </property>
+     
+     <property name="zip">
+     <value>413102</value>
+      </property>
+      
+      <property name="country">
+      <value>India</value>
+      </property>
+    </bean>
+ 
+ 
+ 
+ 
+ 
+ </beans>
